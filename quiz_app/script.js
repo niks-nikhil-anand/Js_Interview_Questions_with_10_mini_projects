@@ -76,8 +76,8 @@ function showQuestions(){
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButton.appendChild(button);
-        if(answers.correct){
-            button.dataset.correct = answers.correct;
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
         }
         button.addEventListener("click" , selectAnswer);
     })
@@ -90,8 +90,8 @@ function resetState(){
    } 
 }
 
- function selectAnswer(dets){
-    const selectedBtn = e.target;
+function selectAnswer(dets){
+    const selectedBtn = dets.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
         selectedBtn.classList.add("correct");
