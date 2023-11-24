@@ -61,6 +61,10 @@ body{
     font-size: 15px;
     border: 0;
     display: none;
-
-
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
 }

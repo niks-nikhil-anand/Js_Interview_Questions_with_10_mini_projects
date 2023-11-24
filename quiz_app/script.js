@@ -52,7 +52,51 @@ const questions = [
 
 ]
 
-const questionButton = document.getElementById("question");
+const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-btn");
 const nextButton = document.getElementById("next-btn");
 
+let currentQuestionIndex = 0;
+let score = 0;
+function startQuiz(){
+    currentQuestionIndex =0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestions();
+}
+
+function showQuestions(){
+    resetState();
+   let currentQuestion = questions[currentQuestionIndex];
+    let questionsNo = currentQuestionIndex +1;
+    questionElement.innerHTML = questionsNo + "." + currentQuestion.questions;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButton.appendChild(button);
+        if(answers.correct){
+            button.dataset.correct = answers.correct;
+        }
+        button.addEventListener("click" , selectAnswer);
+    })
+}
+
+function resetState(){
+   nextButton.style.display = "none";
+   while(answerButton.firstChild){
+    answerButton.removeChild(answerButton.firstChild);
+   } 
+}
+
+ function selectAnswer(dets){
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct");
+    }else{
+        selectedBtn.classList.add("incorrect");
+    }
+ }
+startQuiz();
