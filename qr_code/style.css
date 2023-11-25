@@ -22,6 +22,7 @@ body{
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    border: 2px solid red;
 
 }
 .container h3{
@@ -31,22 +32,22 @@ body{
 
 }
 .container input{
-    padding: 10px 0;
+    padding: 10px 5px;
     margin-bottom: 20px;
     border: 2px solid black;
     outline: none;
+    font-weight: 600;
+
 }
 .container button{
     width: 100%;
     padding: 10px 0;
     box-shadow: 5px 5px lightblue;
-    background-color: #142dcf;
+    background-color: rgb(84, 191, 227);
     font-weight: 600;
     font-size: 15px;
     cursor: pointer;
-}
-.container button:hover{
-    background-color: #0122f5;
+    margin-top: 20px;
 }
 
 #imgBox{
