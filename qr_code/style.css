@@ -43,4 +43,8 @@ body{
     background-color: #142dcf;
     font-weight: 600;
     font-size: 15px;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: #0122f5;
 }
