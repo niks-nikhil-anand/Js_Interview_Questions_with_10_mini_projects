@@ -36,6 +36,12 @@ p {
     font-size: 16px;
     color: #ffff;
     font-weight: 400;
+    opacity: 0;
+}
+
+.fade{
+    opacity: 1;
+    transition: opacity 1.5s;
 }
 
 button {
