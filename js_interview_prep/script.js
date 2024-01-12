@@ -74,8 +74,65 @@
 // let addTwoNum = (a ,b) => a +b ;
 // console.log(addTwoNum(8 , 8))
 
-let multipleBy2 = num => num*2 ;
-console.log(multipleBy2(9))
+// let multipleBy2 = num => num*2 ;
+// console.log(multipleBy2(9))
+
+// difference between traditional and arrow function 
+// let obj1 = {
+//     valueOfThis : function(){
+//         return this
+//     }
+// }
+// let obj2 = {
+//     valueOfThis : ()=> {
+//         return this
+//     }
+// }
+// console.log(obj1.valueOfThis())  // will return the object obj1
+// console.log(obj2.valueOfThis()) // will return the window/global object.
+
+// 4. Anonymous Function
+// const multiply = function(x , y){
+//     return x*y;
+// }
+// console.log(multiply(3,4))
+
+// 5. Named Function 
+// const multiplyByTwo = function add(n){
+//     return n*2;
+// }
+// console.log(multiplyByTwo(256))
+
+// 6. Generator function 
+// function* generator(i){
+//     yield i;
+//     yield i + 5;
+//     yield i + 10;
+//     yield i + 10;
+// }
+// const gen = (generator(5))
+
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next())
+
+// 7 . Constructor function
+
+// function Person(name){
+//     this.name = name;
+// }
+
+// const nikhil = new Person('nikhil')
+// console.log(nikhil)
+
+// 8 . Recursive Function
+// function factorial(n) {
+//     if (n <= 1) {
+//         return 1;
+//     }
+//     return n * factorial(n - 1);
+// }
+// console.log(factorial(10))
 
 
 

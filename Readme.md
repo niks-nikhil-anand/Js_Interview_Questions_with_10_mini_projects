@@ -108,15 +108,86 @@ let addTwoNum = (a ,b) => a +b ;
 let multipleBy2 = num => num*2 ;
     console.log(multipleBy2(9))
 ```
-- 
+- The biggest difference between the traditional function and the arrow function is the handling of this keyword.In general definitation , This keyword always refers to the object that is calling the function but In the he arrow function , there is no binding of this keyword.This keyword inside the arrow function does not refer to the object calling it. It rather inherits it's value from the parent scope which is window in this case.   
+```Javascript
+let obj1 = {
+    valueOfThis : function(){
+        return this
+    }
+}
+let obj2 = {
+    valueOfThis : ()=> {
+        return this
+    }
+}
+console.log(obj1.valueOfThis())  // will return the object obj1
+console.log(obj2.valueOfThis()) // will return the window/global object.
+```
+4. Anonymous function
+- A function without name
+- Often used as callback or immediately invoked function expressions(IIFE).
 
+```Javascript
+const multiply = function(x , y){
+    return x*y;
+}
+console.log(multiply(3,4))
+```
+5. Named Function expressions.
+- smiliar to function expression but with a name.
+- The name is only visible in the function itself.
+```Javascript
+const multiplyByTwo = function add(n){
+    return n*2;
+}
+console.log(multiplyByTwo(256))
+```
+6. Immediately Invoked Function.
+- A function that is executed immediately after it's created.
+```Javascript
+(function(){
+    console.log("hello this is Immediately invoked functions")
+})();
+```
+7. Generator Functions
+- Introduced in ECMASCRIPT-6(ES6)
+- Allows the pausing and resuming the execution of the functions.
 
+```Javascript
+function * generator(i){
+    yield i;
+    yield i + 5;
+    yield i + 10;
+    yield i + 10;
+}
+const gen = (generator(5))
 
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next())
+```
+8. Constructor Functions
+- Used with the *new* keyword to create the instance of objects.
+- Capitalize by convention
+```Javascript
+function Person(name){
+    this.name = name;
+}
 
-
-
-
-
+const nikhil = new Person('nikhil')
+console.log(nikhil)
+```
+9. Recursive funtion
+- Functions that call itself.
+```Javascript
+function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+console.log(factorial(10))
+```
 ### 13)- Explain Higher-order functions in javascript.?
 --> Functions that operates on other functions, either taking as arguments or by returning them , are called higher-order functions. 
 - The first-class nature of functions in javascript faciliates the creations of higher-order functions.
