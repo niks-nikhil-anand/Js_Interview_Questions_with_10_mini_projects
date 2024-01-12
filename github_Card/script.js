@@ -21,7 +21,7 @@ async function getData(username) {
 
            
             list.innerHTML = `<li>
-                <h3>Full Name</h3>
+                <h3>Full Name:-</h3>
                 <h4>${res.name}</h4>
             </li>
             <li>
@@ -42,6 +42,9 @@ async function getData(username) {
             </li>`;
         })
         .catch((error) => console.error('Error fetching GitHub user data:', error));
+        document.querySelector('.hello').value = '';
+       
+
 }
 
 
