@@ -56,7 +56,27 @@
 
 // console.log(print.greet)
 
-// 
+// what are the types of functions in javascript
+// 1st :- Function declarations
+// function myName(){
+//     console.log("Nikhil Anand")
+// }
+// myName();
+
+// 2. Function expression
+
+// let nikhil = function(){
+//     return console.log("College-DropOut")
+// }
+// nikhil()
+// 3. Arrow function
+
+// let addTwoNum = (a ,b) => a +b ;
+// console.log(addTwoNum(8 , 8))
+
+let multipleBy2 = num => num*2 ;
+console.log(multipleBy2(9))
+
 
 
 

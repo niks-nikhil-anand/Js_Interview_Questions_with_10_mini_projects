@@ -71,8 +71,45 @@ print.greet = "GOOD EVENING"
 
 console.log(print.greet)
 ```
+---
 ### 13)- What are different types of functions.?
---> 
+--> In Javascript , there are several types of function based on how they are defined and used , here are the main types:-
+
+1. Function Declarations
+     - Defined using function keyword.
+     - Can be called before the declarations.
+```Javascript
+function myName(){
+    console.log("Nikhil Anand")
+}
+myName();
+```
+2.Function expression 
+      - Assigned to variable or a property.
+      - the function is not hoisted.
+```Javascript
+let nikhil = function(){
+    return console.log("College-DropOut")
+}
+nikhil()
+```
+3.Arrow Function
+- Arrow function were introduced in ES6 version of javascript. They provides us with a new and shorter syntax of declaring functions. 
+- Arrow function can only be used as a function expression.
+- Arrow function are declared without function keyword.
+
+```Javascript
+let addTwoNum = (a ,b) => a +b ;
+    console.log(addTwoNum(8 , 8))
+```
+- If the functions takes only one arguments , then the parenthesis () around the parameters can be omitted as shown below.
+
+```Javascropt
+let multipleBy2 = num => num*2 ;
+    console.log(multipleBy2(9))
+```
+- 
+
 
 
 
