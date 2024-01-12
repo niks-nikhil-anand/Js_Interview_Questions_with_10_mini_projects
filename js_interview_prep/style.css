@@ -3,3 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+.heading {
+    background-color: rgb(42, 233, 9);
+    color: white;
+    text-align: center;
+    margin: 20vh;
+}
