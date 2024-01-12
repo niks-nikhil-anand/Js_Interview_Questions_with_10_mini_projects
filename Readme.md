@@ -1,6 +1,6 @@
 # Javascript Interview Questions
 ***
-**10)- What is Immediately Invoked Functions.?**
+### 10)- What is Immediately Invoked Functions.?
 --> An Immediately invoked fucntion  (also known as IIFE and pronounced as IIFY) , is a function that runs as soon as it defined . To understand the concept of IIFE, it is crucial to recognize the two sets of parentheses ()() involved: the first set for defining the function, and the second set for immediate execution."
 
 ```Javscript
@@ -9,7 +9,7 @@
 })();
 ```
 
-**11)-What is the concept of first-class citizens in JavaScript, and how does it manifest in the treatment of functions within the language?
+### 11)-What is the concept of first-class citizens in JavaScript, and how does it manifest in the treatment of functions within the language?
 --> In javascript , functions are considered first-class citizens,which mean they are treated as values and can be used as the same way as other data types like strings, numbers , objects etc.
 
 1. Assignings to variables
