@@ -8,7 +8,7 @@
     console.log("hello this is Immediately invoked functions")
 })();
 ```
-
+---
 ### 11)-What is the concept of first-class citizens in JavaScript, and how does it manifest in the treatment of functions within the language?
 --> In javascript , functions are considered first-class citizens,which mean they are treated as values and can be used as the same way as other data types like strings, numbers , objects etc.
 
@@ -67,12 +67,26 @@ const functionObjects = {
 function print(){
     console.log("Nikhil")
 }
-
 print.greet = "GOOD EVENING"
 
 console.log(print.greet)
 ```
+### 13)- What are different types of functions.?
+--> 
 
+
+
+
+
+
+
+### 13)- Explain Higher-order functions in javascript.?
+--> Functions that operates on other functions, either taking as arguments or by returning them , are called higher-order functions. 
+- The first-class nature of functions in javascript faciliates the creations of higher-order functions.
+```Javascript
+1. Map 
+--> The `Map` function applies 
+```
 
 
 
